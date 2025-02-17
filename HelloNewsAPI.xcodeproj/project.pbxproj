@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		150BF26C2D6336240082C07F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 150BF26B2D6336240082C07F /* SDWebImage */; };
+		152932362D34F8E600BE5DA6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 152932352D34F8E600BE5DA6 /* Alamofire */; };
+		1529323D2D35044A00BE5DA6 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1529323C2D35044A00BE5DA6 /* SwiftyJSON */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1529321C2D34F8C100BE5DA6 /* HelloNewsAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloNewsAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150BF26C2D6336240082C07F /* SDWebImage in Frameworks */,
+				1529323D2D35044A00BE5DA6 /* SwiftyJSON in Frameworks */,
+				152932362D34F8E600BE5DA6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,9 @@
 			);
 			name = HelloNewsAPI;
 			packageProductDependencies = (
+				152932352D34F8E600BE5DA6 /* Alamofire */,
+				1529323C2D35044A00BE5DA6 /* SwiftyJSON */,
+				150BF26B2D6336240082C07F /* SDWebImage */,
 			);
 			productName = HelloNewsAPI;
 			productReference = 1529321C2D34F8C100BE5DA6 /* HelloNewsAPI.app */;
@@ -107,6 +119,11 @@
 			);
 			mainGroup = 152932132D34F8C100BE5DA6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				152932342D34F8E600BE5DA6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1529323B2D35044A00BE5DA6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				150BF26A2D6336240082C07F /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1529321D2D34F8C100BE5DA6 /* Products */;
 			projectDirPath = "";
@@ -335,6 +352,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		150BF26A2D6336240082C07F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.20.0;
+			};
+		};
+		152932342D34F8E600BE5DA6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		1529323B2D35044A00BE5DA6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		150BF26B2D6336240082C07F /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 150BF26A2D6336240082C07F /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		152932352D34F8E600BE5DA6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 152932342D34F8E600BE5DA6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1529323C2D35044A00BE5DA6 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1529323B2D35044A00BE5DA6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 152932142D34F8C100BE5DA6 /* Project object */;
 }
